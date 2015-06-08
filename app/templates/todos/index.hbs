@@ -1,0 +1,5 @@
+<ul id="todo-list">
+  {{#each model as |todo|}}
+    {{#todo-task title=todo.title isCompleted=todo.isCompleted todo=todo emberSync=this.emberSync}}{{/todo-task}}
+  {{/each}}
+</ul>
